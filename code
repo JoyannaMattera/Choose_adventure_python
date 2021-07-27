@@ -1,18 +1,3 @@
-def game_1():
-    print("You failed to get your eyesight back.")
-    print("Game over!")
-
-def game_2():
-    print("The elves have stolen your ears.")
-    print("Game over!")
-    
-def game_3():
-    print("The gnomes have stolen your eyes.")
-    print("Game over!")
-    
-def game_4():
-    print("You got your eyesight back!")
-    print("Game over!")
 
 def game_5():
     print("Make sure you can see before you play a game about seeing.")
@@ -20,24 +5,59 @@ def game_5():
     
     
     
-def wait_longer():
-    print("you decided to wait longer.")
-    print("Once you feel safe, you exit your hiding spot")
-    print("Will you continue on your path or turn back to the entrance?")
-    print("1:Continue 2:Turn back")
+def wait_longerrr():
+    print("HOW LONG ARE YOU GOING TO SIT THERE AND WAIT!?!")
+    print("Go face the growl. It is time.")
+    print("1:Face the growl 2:Face the growl")
     
-     answer = input(">")
+    answer = input(">")
+    
+    if answer == "1":
+        face_growl()
+        
+    elif answer =="2":
+        face_growl()
+        
+    else:
+        game_5()
+  
+
+
+def wait_longerr():
+    print("You wait awhile longer.")
+    print("What do you do now?")
+    print("1.Go check the growl 2.Wait even longer")
+    
+    
+    answer = input(">")
 
     if answer == "1":
-       forest_deep_left()
+        face_growl()
     
     elif answer == "2":
-        forest_enter()
+        wait_longerrr()
+    
+    else:
+        game_5() 
+    
+    
+    
+def wait_longer():
+    print("You wait awhile longer.")
+    print("What do you do now?")
+    print("1.Go check the growl 2.Wait even longer")
+    
+    
+    answer = input(">")
+
+    if answer == "1":
+        face_growl()
+    
+    elif answer == "2":
+        wait_longerr()
     
     else:
         game_5()
-    
-    
     
     
 def hide_bush():
@@ -48,7 +68,7 @@ def hide_bush():
     print("1:Wait 2:Go check the growl")
     
     
-     answer = input(">")
+    answer = input(">")
 
     if answer == "1":
         wait_longer()
@@ -58,8 +78,147 @@ def hide_bush():
     
     else:
         game_5()
+ 
+def gnome_glasses():
+    print("You got your magic glasses!")
+    print("They are not really all that magic...")
+    print("After looking at them further they are just expensive gucci glasses with progressive lenses!")
+    print("But hey, you can see better than ever!")
+    print("Mission accomplished!")
+    print("Play again? 1:Yes 2:No")
+    
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
     
     
+def gnome_insurance():
+    print("The gnome takes down your information and asks you to sit down for a moment.")
+    print("As you wait and sit on a treestump you browse through GNOMEWEEKLY")
+    print("After waiting for afew minutes, a gnome doctor comes out and asks you to kneel")
+    print("The gnome hops up your body and stands on your nose as he shines a light into your eyes.")
+    print("after the gnome is done with his tests he lets out a sigh and says")
+    print('"Alrighty, So I will get your glasses set up. Will you be paying cash or card?"')
+    print("1:Cash   2:Card")
+ 
+    answer = input(">")
+
+    if answer == "1":
+        gnome_glasses()
+    
+    elif answer == "2":
+        gnome_glasses()
+    
+    else:
+        game_5()
+
+def gnome_nocarry():
+    print("The gnome looks up at you and says,")
+    print('"Ahhhhh... Yeah sorry we dont accept that insurance..."')
+    print('"We can reccommend a good LensCrafters near you though!"')
+    print('GAME OVER')
+    print('You did not get your magic glasses..')
+    print("Try again?")
+    print("1:Yes  2:No")
+    
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+        
+        
+def gnome_follow():
+    print("You follow the gnome to their small hideout.")
+    print("The Gnome asks you what insurance you use.")
+    print("What insurance do you have?")
+    print("1:Cigna 2:BlueCross BlueShield")
+    
+    answer = input(">")
+
+    if answer == "1":
+        gnome_insurance()
+    
+    elif answer == "2":
+        gnome_nocarry()
+    
+    else:
+        game_5()
+
+def gnome_stomp():
+    print("You go to stomp on the gnome when suddenly he cries out in his mega phone!")
+    print("From the forest hundreds of gnomes fly in on bumblebees")
+    print("The gnomes on bees swarm you chanting in gnome tounges.")
+    print("The gnomes have stollen your eyes.")
+    print("GAME OVER")
+    print("Try again? 1:Yes 2:No")
+    
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+
+   
+def gnome_apologize():
+    print("You apologize for almost crushing the gnome and ruining his Marco Polo game.")
+    print("You also assure the gnome that you do not go stomping kids sandcastles for fun.")
+    print("You explain your eyesight problem and how you came to the forest to get help.")
+    print('The gnome replies, "Well you should have said that sooner!! Come with me I can help!"')
+    print('What do you do?')
+    print("1:Follow the gnome  2:Stomp on the gnome")
+    
+    answer = input(">")
+
+    if answer == "1":
+        gnome_follow()
+    
+    elif answer == "2":
+        gnome_stomp()
+    
+    else:
+        game_5()
+
+
+
+def face_growl():
+    print("You muster up some courage and decide to face the growl!")
+    print("As you search for the growl you end up finding a gnome with a megaphone")
+    print('"HEY WHAT DO YOU THINK YOUR DOING??"')
+    print('"YOU ARE MESSING UP OUR MARCO POLO GAME"')
+    print('"DO YOU JUST MESS UP GAMES FOR FUN? IS THAT YOUR TYPE OF FUN?"')
+    print('"DO YOU ALSO STOMP ON KIDS SANDCASTLES!?!?!?!?!?!"')
+    print("What do you do in response to the angry gnome?")
+    print("1:Apologize and explain your quest 2:Stomp on the gnome")
+    
+    
+    answer = input(">")
+
+    if answer == "1":
+        gnome_apologize()
+    
+    elif answer == "2":
+        gnome_stomp()
+    
+    else:
+        game_5()
     
     
 def forest_left():
@@ -78,6 +237,281 @@ def forest_left():
     
     else:
         game_5()
+    
+    
+def earl_grey():
+    print("You mix your tea with the ear and drink it quickly.")
+    print("As you drink the tea your glasses become blurry...")
+    print("You take your glasses off and suddenly you can see clearer than ever before!")
+    print("GAME OVER!You got your eyesight back!!!!!")
+    print("Play again?")
+    print("1:Yes  2:No")
+    
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+
+
+
+def take_ear():
+    print("You take the elf by the ear and pull it as hard as you can")
+    print("The elf's ear pops off like a button")
+    print("You take the ear and run as far as you can so you can immediatly brew it into a tea.")
+    print("What tea would you like to mix the ear with?")
+    print("1:Earl Grey   2:Chamomile")
+    
+    
+
+    answer = input(">")
+
+    if answer == "1":
+        earl_grey()
+    
+    elif answer == "2":
+        earl_grey()
+    
+    else:
+        game_5()
+    
+def perma_eye():
+    print("Your lust for eyesight is far greater than a pair of glasses")
+    print("You poison their water supply, burn their crops and deliver a plague unto their houses!")
+    print("You take all of their ears, which happen to snap on like buttons, and brew them into a gigantic tea")
+    print("You drink the tea and your eyesight becomes clear!")
+    print("Problem is... You drank too much tea and exploded...")
+    print("Remember: Everything in moderation! You CAN have too much of a good thing!")
+    print("GAME OVER!!! Play again?")
+    print("1:Yes  2:No")
+    
+           
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+          
+          
+    
+    
+    
+def glasses_ok():
+    print("You let the elf know that you would like glasses and she happily runs to get a pair")
+    print("As you try on the pair your vision becomes clearer than its ever been before!")
+    print("You have sucessfully gotten better eyesight!")
+    print("GAME OVER Play again?")
+    
+    
+    
+           
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+          
+          
+    
+    
+    
+def follow_elf():
+    print("You follow the elf to her village where you see the elves turning gnome ashes into glass for glasses")
+    print("The elf asks you if glasses would be alright")
+    print("Are glasses alright?")
+    print("1:Glasses will do just fine  2:NO!I want permanent eyesight!")
+    
+    answer = input(">")
+
+    if answer == "1":
+        glasses_ok()
+    
+    elif answer == "2":
+        perma_eye()
+    
+    else:
+        game_5()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+def explain_problems():
+    print("As you explain your problems to the elf she offers to take you to her village to see if they can help.")
+    print("Do you accept her offer?")
+    print("1:Yes follow her 2:No, Turn back to the entrance")
+          
+    answer = input(">")
+
+    if answer == "1":
+        follow_elf()
+    
+    elif answer == "2":
+        forest_enter()
+    
+    else:
+        game_5()
+    
+    
+def elf_talk():
+    print("You speak to the elf for acouple hours. The night fall comes as she explains her fears of having her ears taken.")
+    print("You know from your studies that brewing an elf's ear into tea will cure your eyesight problems...")
+    print("What do you do?")
+    print("1:Take her ears!  2:Explain your eyesight problems to the elf")
+    
+    
+    answer = input(">")
+
+    if answer == "1":
+        take_ear()
+    
+    elif answer == "2":
+        explain_problems()
+    
+    else:
+        game_5()
+    
+    
+    
+    
+    
+    
+    
+    
+def elf_compliment():
+    print("You compliment the elf on her music.")
+    print("The elf becamed startled!")
+    print('"Oh hello there! Well thank you... What brings you out into these woods?"')
+    print("1:Explain your eyesight   2:Pardon yourself and go back to the forest entrance")
+    
+    
+    answer = input(">")
+
+    if answer == "1":
+        elf_talk()
+    
+    elif answer == "2":
+        forest_enter()
+    
+    else:
+        game_5()
+    
+def fight_sleep():
+    print("you are unable to fight falling asleep.")
+    print("When you wake you you are surrounded by elves.")
+    print('"Goodmorning sleepy head! I hope you had a nice nap! You see, We really need to take your eyes so we can grow longer ears!"')
+    print('GAME OVER')
+    print('The elves have stolen your eyes... Try again?')
+    print("1:Yes  2:No")
+          
+          
+          
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+          
+          
+          
+          
+def sleep_peace():
+    print("you calmly fell asleep")
+    print("When you wake you you are surrounded by elves.")
+    print('"Goodmorning sleepy head! I hope you had a nice nap! We really need to take your eyes so we can grow longer ears!"')
+    print('GAME OVER')
+    print('The elves have stolen your eyes... Try again?')
+    print("1:Yes  2:No")
+          
+          
+          
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+
+    
+def elf_listen():
+    print("As you sit and listen you are put into a trance")
+    print("You feel youself dozing off into sleep. You can not stop it.")
+    print("What do you do?")
+    print("1:Peacefully fall asleep  2:Try to fight it")
+    
+    
+    answer = input(">")
+
+    if answer == "1":
+        sleep_peace()
+    
+    elif answer == "2":
+        fight_sleep()
+    
+    else:
+        game_5()
+    
+    
+    
+    
+    
+    
+def forest_right():
+    print("You follow the paths on the right and find yourself at a pond.")
+    print("There is a small female elf sitting on a lilly pad in the pond playing a whistle stick.")
+    print("What do you do?")
+    print("1:Compliment her whistle stick playing abilities 2:Sit down and listen to her music")
+    
+    
+   
+    answer = input(">")
+
+    if answer == "1":
+        elf_compliment()
+    
+    elif answer == "2":
+        elf_listen()
+    
+    else:
+        game_5()
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 def forest_enter():
     print("You enter the forest.")
@@ -126,28 +560,26 @@ def start():
     print("It is said there are two ways to see.")
     print("The gnomes can make you special glasses or you can brew an elves ear into a tea.")
     print("Are you ready for your journey?")
-    print("yes or no?")
+    print("1:Yes or 2:No")
 
     answer = input(">").lower()
 
-    if "e" in answer:
+    if "1" in answer:
         fairy_forest()
-    elif "o" in answer:
+    elif "2" in answer:
         game_1()
 
 
 #ask player if they would like to play
-print("Would you like to play the game? Yes or no?")
+print("Would you like to play the game? 1:Yes or 2:No?")
     
     
 #convert answers to lowercase
 answer = input(">").lower()
     
-if "y" in answer:
+if "1" in answer:
 #starts game
     start()
     #user must type y or yes to begin game
 else:
     exit()
-    
-    
