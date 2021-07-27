@@ -13,5 +13,5 @@ Sprint 2 requirments:
 
 - [x] Polish up basic code 
 - [x] Rework Story
-- [x] Fix any errors
+- [] Fix any errors
 
