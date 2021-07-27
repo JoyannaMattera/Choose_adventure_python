@@ -1,0 +1,131 @@
+def game_1():
+    print("You failed to get your eyesight back.")
+    print("Game over!")
+
+def game_2():
+    print("The elves have stolen your ears.")
+    print("Game over!")
+    
+def game_3():
+    print("The gnomes have stolen your eyes.")
+    print("Game over!")
+    
+def game_4():
+    print("You got your eyesight back!")
+    print("Game over!")
+
+def game_5():
+    print("Make sure you can see before you play a game about seeing.")
+    print("You failed to give a valid input. Try again later.")
+    
+    
+    
+    
+    
+    
+    
+def hide_bush():
+    print("As you hide in the bushes, The growls get louder")
+    print("You hold your breath and hope that whatever is out there can not hear you.")
+    print("It has now been acouple minutes since you have heard the growl.")
+    print("Will you wait a while longer or go check the growl?")
+    print("1.Wait 2.Go check the growl")
+    
+    
+    
+    
+    
+def forest_left():
+    print("You decided to follow the path on the left.")
+    print("While walking through the forest, you hear a growl.")
+    print("What do you do?")
+    print("1.Hide 2.Face the Growl")
+    
+    answer = input(">")
+
+    if answer == "1":
+        hide_bush()
+    
+    elif answer == "2":
+        face_growl()
+    
+    else:
+        game_5()
+    
+def forest_enter():
+    print("You enter the forest.")
+    print("There are 2 sets of footprints.")
+    print("On the left, There are small prints that seem chaotic.")
+    print("On the right, There are slightly larger prints that are calm and coordinated")
+    print("Which footprints would you like to follow?")
+    print("1:Left 2:Right")
+    
+    answer = input(">")
+
+    if answer == "1":
+        forest_left()
+    
+    elif answer == "2":
+        forest_right()
+    
+    else:
+        game_5()
+    
+    
+def fairy_forest():
+    print("You are almost legally blind.")
+    print("All you have is a pair of glasses and a dream.")
+    print("There are tales of gnomes and elves that can help your eyesight.")
+    print("Would you like to venture in hopes of getting clear vision?")
+    print("1:Lets go! 2:I'm okay with being blind.")
+
+    answer = input(">")
+
+    if answer == "1":
+        forest_enter()
+    
+    elif answer == "2":
+        game_1()
+    
+    else:
+        game_5()
+    
+
+def start():
+    print("...Long ago legend tells stories of the elves and gnomes.")
+    print("it has been said that these races have been at war for hundreds of years.")
+    print("Their wars stem over eyesight...")
+    print("The elves steal humans eyesight while the gnomes want humans to see.")
+    print("It is said there are two ways to see.")
+    print("The gnomes can make you special glasses or you can brew an elves ear into a tea.")
+    print("Are you ready for your journey?")
+    print("yes or no?")
+
+    answer = input(">").lower()
+
+    if "e" in answer:
+        fairy_forest()
+    elif "o" in answer:
+        game_1()
+
+
+#ask player if they would like to play
+print("Would you like to play the game? Yes or no?")
+    
+    
+#convert answers to lowercase
+answer = input(">").lower()
+    
+if "y" in answer:
+#starts game
+    start()
+    #user must type y or yes to begin game
+else:
+    exit()
+    
+    
+
+
+
+
+
