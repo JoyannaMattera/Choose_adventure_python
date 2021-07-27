@@ -32,6 +32,17 @@ def hide_bush():
     print("1.Wait 2.Go check the growl")
     
     
+     answer = input(">")
+
+    if answer == "1":
+        wait_longer()
+    
+    elif answer == "2":
+        check_growl()
+    
+    else:
+        game_5()
+    
     
     
     
