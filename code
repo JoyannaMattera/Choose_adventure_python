@@ -1,9 +1,36 @@
 
+def game_1():
+    print("You have failed your quest to fix your eyesight")
+    print("Would you like to try again?"
+    print("1:Yes 2:No")
+    
+    answer = input(">")
+
+    if answer == "1":
+        start()
+    
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
+        
+        
 def game_5():
     print("Make sure you can see before you play a game about seeing.")
-    print("You failed to give a valid input. Try again later.")
+    print("You failed to give a valid input. Would you like to try again?")
+    print("1:Yes 2:No"
     
+    answer = input(">")
+
+    if answer == "1":
+        start()
     
+    elif answer == "2":
+        exit()
+    
+    else:
+        game_5()
     
 def wait_longerrr():
     print("HOW LONG ARE YOU GOING TO SIT THERE AND WAIT!?!")
@@ -571,7 +598,7 @@ def start():
 
 
 #ask player if they would like to play
-print("Would you like to play the game? 1:Yes or 2:No?")
+print("Would you like to play the game? 1:Yes or 2:No?  NOTE: Only type 1 or 2 into input! ")
     
     
 #convert answers to lowercase
