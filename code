@@ -20,6 +20,22 @@ def game_5():
     
     
     
+def wait_longer():
+    print("you decided to wait longer.")
+    print("Once you feel safe, you exit your hiding spot")
+    print("Will you continue on your path or turn back to the entrance?")
+    print("1:Continue 2:Turn back")
+    
+     answer = input(">")
+
+    if answer == "1":
+       forest_deep_left()
+    
+    elif answer == "2":
+        forest_enter()
+    
+    else:
+        game_5()
     
     
     
@@ -29,7 +45,7 @@ def hide_bush():
     print("You hold your breath and hope that whatever is out there can not hear you.")
     print("It has now been acouple minutes since you have heard the growl.")
     print("Will you wait a while longer or go check the growl?")
-    print("1.Wait 2.Go check the growl")
+    print("1:Wait 2:Go check the growl")
     
     
      answer = input(">")
